@@ -1,0 +1,44 @@
+.breadcrumb {
+  margin-bottom: 3rem;
+}
+
+.levelList {
+  display: flex;
+  gap: 1.3rem;
+  list-style: none;
+
+  > div {
+    position: relative;
+
+    &:not(:first-child)::before {
+      position: absolute;
+      right: calc(100% + 0.5rem);
+      min-width: max-content;
+      content: '/';
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.selector {
+  position: absolute;
+  top: 120%;
+  left: -0.5rem;
+  background: white;
+  border: 1px solid black;
+  list-style: none;
+  padding: 0.5rem;
+  display: none;
+
+  &.showSelector {
+    display: block;
+  }
+}

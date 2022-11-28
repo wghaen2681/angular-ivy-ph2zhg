@@ -1,0 +1,14 @@
+.container_subject {
+  &:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+}
+
+.container_child {
+  margin-top: 0.7rem;
+
+  & > a:not(:first-child) {
+    margin-left: 0.5rem;
+    line-height: 2;
+  }
+}
